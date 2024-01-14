@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Tag</title>
+</head>
+
+<body>
+    <h1>signup form</h1>
+    <form action="post">
+        <!-- input tag -->
+        <!-- lable tag -->
+        <div>
+            <label for="username">Enter Your Username</label>
+            <input type="text" id="username" name="Username" placeholder="enter your username" autofocus required>
+        </div>
+        <!-- required, autofocus, pattern attribute -->
+        <div>
+            select your gender
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" required>
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subscribe" id="subscribe" value="yes" required>
+            <label for="subscribe">subscribed your channel</label>
+        </div>
+
+        <!-- textarea tag -->
+        <div>
+            <textarea name="comment" id="comment" cols="30" rows="10">enter your comment..</textarea>
+        </div>
+        <div>
+            <label for="comment1">enter your comment</label><br>
+            <textarea name="comment" id="comment1" cols="30" rows="10"></textarea>
+        </div>
+
+        <!-- select tag -->
+        <div>
+            <label for="select">select fruit</label>
+            <select name="select" id="select">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="orange">Orange</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
