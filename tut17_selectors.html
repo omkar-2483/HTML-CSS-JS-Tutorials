@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* element selector */
+        div{
+            background-color: red;
+        }
+        /* class selector */
+        .green{
+            background-color: green;
+        }
+        /* id selector */
+        #yello{
+            color: yellow;
+        }
+        /* child selector */
+        div > p{
+            color: blue;
+            background-color: brown;
+        }
+        /* descendant selector */
+        div p{
+            color: aliceblue;
+            background-color: black;
+        }
+        /* universal selector */
+        *{
+            padding: 0%;
+            margin: 1%;
+        }
+        /* pseudo selector */
+        a:visited{
+            /* colour becomes yellow when once visited */
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            /* background-color becomes red when you click on link */
+            background-color: red;
+        }
+        a:hover{
+            /* when mouse is placed on link */
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>hi i am p first</p>
+        <p>hi i am p second</p>
+    </main>
+    <div>
+        I am a div
+        <p>
+            i am para inside div
+        </p>
+    </div>
+    <div class="green">
+        I am second div
+    </div>
+    <div id="yello">
+        I am third div
+        <article>
+            <p>
+                I am dedcendant para in div
+            </p>
+        </article>
+    </div>
+    <a href="https://www.google.com">Go To Google</a>
+</body>
+</html>
