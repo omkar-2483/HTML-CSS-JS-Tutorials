@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid;
+            border-color: black;
+            /* this sizes are added in addition to actual size of box */
+            /* to make total size equal to box */
+            box-sizing: border-box;
+            height: 100px;
+        }
+        .box2{
+            color: red;
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid;
+            border-color: black;
+            /* this sizes are added in addition to actual size of box */
+            /* to make total size equal to box */
+            box-sizing: border-box;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <img src="box_model.png" class=box alt="Box Model pic" height="200px">
+    <img src="margin-collapse.png" class="box" alt="margin collapse pic" height="200px">
+    <div class="box box1"> I am Box</div>
+    <div class="box box2">I am another Box</div>
+</body>
+</html>
