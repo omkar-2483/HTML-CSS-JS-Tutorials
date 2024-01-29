@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity and Cascading</title>
+    <style>
+        .green {
+            color: green;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .red {
+            color: red;
+        }
+        .imp{
+            color: blue !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="background-color: coral;">cascading algorothm in css</h2>
+    when different properties are applied to same element through different selecters:
+    <h3>1. efffect of position: when same type of selector is used </h3>
+    that property will be applied which appears at last
+    <div>
+        <p class="red yellow green">this is example of efffect of position</p>
+    </div>
+
+    <h3>2. specificity: when different types of selectors are used</h3>
+    priority: inline css --> ID --> Attribute/class --> element selector (p,div,etc) --> universal selector*
+
+    <h3>3. Orign</h3>
+    the order in which css appears aand where it comes from, whether thar is a browser style,css from a browser
+    extension or your authored css.
+
+    <h3>4. importance: overwrites every selector</h3>
+    <p class="imp" style="color: red;">this is example of important tag</p>
+
+    <h3>specificity calculation</h3>
+    <div style="background-color: yellow;">
+        <ul>
+            <li>Inline=1000</li>
+            <li>ID=100</li>
+            <li>Class/attribute=10</li>
+            <li>element=1</li>
+            <li>universal=0</li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
