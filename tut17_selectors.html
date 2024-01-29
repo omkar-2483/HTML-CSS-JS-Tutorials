@@ -51,6 +51,11 @@
         p:first-child{
             background-color: pink;
         }
+
+        /* attribute selector */
+        [data-x=a]{
+            background-color: brown;
+        }
     </style>
 </head>
 <body>
@@ -76,5 +81,7 @@
         </article>
     </div>
     <a href="https://www.google.com">Go To Google</a>
+
+    <p data-x="a">attribute selector</p>
 </body>
 </html>
