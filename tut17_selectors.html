@@ -15,7 +15,13 @@
         }
         /* id selector */
         #yello{
+            text-align: center;
             color: yellow;
+        }
+        /* element with specific class */
+        p.one{
+            text-align:center;
+            color:red;
         }
         /* child selector */
         div > p{
@@ -35,7 +41,7 @@
         /* pseudo selector */
         a:visited{
             /* colour becomes yellow when once visited */
-            color: yellow;
+            color: magenta;
         }
         a:link{
             color: green;
@@ -56,11 +62,17 @@
         [data-x=a]{
             background-color: brown;
         }
+
+        /* grouping selectors */
+        p, div{
+            text-align: justify;
+            background-color: navy;
+        }
     </style>
 </head>
 <body>
     <main class="one">
-        <p>hi i am p first</p>
+        <p class="one">hi i am p first</p>
         <p>hi i am p second</p>
     </main>
     <div>
