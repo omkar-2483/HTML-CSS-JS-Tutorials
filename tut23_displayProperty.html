@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display properties</title>
+    <style>
+        * {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .box {
+            border: 2px solid red;
+            margin: 5px;
+            padding: 50px;
+        }
+
+        .box1{
+            display: inline;
+            display: flex;
+            justify-content: center;
+        }
+
+         .box2 {
+            display: inline-block;
+            /* display: none; */
+            /* visibility: hidden; */
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="box box2">
+        div is a block
+    </div>
+    <div class="box box2">
+        but we can make it inline using display property
+    </div>
+
+    <span>span is already</span>
+    <span> inline</span>
+    <div class="box box2">
+        for inline margin/padding is not added at top, so use inline-block
+        display:none --- box and space will be disappeared
+        visibility:hidden---box will disappeared but space will be reserved
+    </div>
+
+
+</body>
+
+</html>
