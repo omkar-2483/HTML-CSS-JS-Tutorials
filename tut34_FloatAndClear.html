@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root; /*fix image in box*/
+        }
+        img{
+            float: right;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            clear: right;
+            /* clear: both; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.hqgXmy-r13g-63xcvlz6AwHaE7&pid=Api&P=0&h=180" alt="" width="300">
+        <div class="card">card1
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, inventore ullam vitae quae modi magni
+            voluptas suscipit in! Placeat nostrum nisi, quod tenetur hic esse animi ea quia dolorum neque consequuntur
+            porro praesentium, itaque atque.
+
+        </div>
+        <div class="card">card2
+            landitiis veritatis? Recusandae nostrum neque temporibus aperiam ex, aliquid ullam magni provident
+            voluptatum fugit, perferendis obcaecati dolorem labore, deleniti suscipit similique error est! Eos rerum
+            magnam voluptates deleniti nihil velit in nulla voluptas ea eveniet distinctio, quaerat quia accusantium
+            quae officia adipisci consequuntur saepe ipsa iste sint? In eius veritatis vero perspiciatis, qui non
+            debitis expedita illo sequi similique dicta repellendus officia, enim deserunt repudiandae fugit ipsa,
+            impedit nam est temporibus amet et illum consequuntur aut. Eum, dolorem, beatae laudantium minima debitis
+            velit cum et reprehenderit blanditiis iusto eius corrupti suscipit tempora nobis delectus, aliquam cumque
+            asperiores officiis sequi culpa quas! Fugiat ipsam reiciendis consequuntur blanditiis quia, itaque nisi
+            saepe officiis maiores magnam. Saepe dolorem nulla molestiae, aspernatur recusandae debitis fugiat repellat
+            illo optio eaque sit quos amet fuga exercitationem ipsa odio culpa deleniti illum laboriosam porro, aliquam,
+            numquam consectetur. Nobis fugit ratione, odit hic illum dignissimos explicabo consectetur commodi maiores
+            sapiente ab nemo incidunt dolorum harum quibusdam iure amet quaerat dolorem. Soluta veritatis autem suscipit
+            repudiandae nobis, sapiente doloremque alias officia qui fugit rerum laudantium omnis impedit ullam magni
+            nihil dicta asperiores explicabo voluptas beatae aliquam atque totam! Voluptatem, fuga eum?
+        </div>
+        <div class="card">card3
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nostrum harum sequi officia unde nemo
+            temporibus eligendi iure voluptates corporis laudantium, nam repellat veniam omnis dicta maxime ab vitae
+            quam amet incidunt necessitatibus magnam.
+        </div>
+    </div>
+</body>
+
+</html>
