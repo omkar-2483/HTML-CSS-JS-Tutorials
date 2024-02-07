@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        .box:first-child {
+            background-color: red;
+        }
+
+        .box:nth-child(2) {
+            background-color: darkblue;
+        }
+
+        .box:nth-last-child(1) {
+            background-color: rgb(17, 130, 86);
+        }
+
+        .box:first-line {
+            color: yellow;
+        }
+
+        /* select all elements in boxes */
+        .boxes * {
+            color: white;
+            border: 2px solid rgb(0, 0, 0);
+        }
+
+        /* attribute selector */
+        [data-color="primary"]{
+            margin: 15px;
+            padding: 15px;
+        }
+
+        /* grouping */
+        a,p,div{
+            color: black;
+        }
+        .boxes:before{
+            content: "is content is displayed before boxes";
+        }
+        .boxes:after{
+            content: "is content is displayed after boxes";
+        }
+
+        /* when we select text */
+        ::selection{
+            color:aqua;
+            background-color: black;
+        }
+        .box::first-letter{
+           font-size: 50px;
+           font-style: bold;; 
+        }
+        input::placeholder{
+            color: rgb(67, 67, 98);
+            /* font-size: 30px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <input type="text" placeholder="Enter your name">
+        <div data-color="primary" class="box">hey i am a box Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae vitae sapiente
+            sit quis laborum blanditiis, maiores distinctio, tenetur at provident exercitationem animi doloremque sed
+            minus laboriosam quasi sunt eius quia, fuga ex. Soluta dolor facilis obcaecati atque non, ab suscipit
+            excepturi cupiditate placeat voluptates earum qui sint nesciunt vel quam provident aliquam sequi magnam sit
+            exercitationem culpa. Fugiat quaerat itaque, eius eveniet ut illo cupiditate numquam sequi beatae delectus
+            provident similique eos possimus, optio maiores est expedita neque aliquid aliquam velit incidunt
+            dignissimos! Temporibus ratione atque, voluptas recusandae, quod qui sequi exercitationem et velit doloribus
+            placeat soluta! Perspiciatis sit, blanditiis consequatur sapiente nihil error totam veniam aperiam eius sint
+            minima consequuntur eum, pariatur reprehenderit accusantium et expedita temporibus rem aspernatur non!
+            Mollitia tempora porro quae? Alias perferendis praesentium velit amet doloremque. Vitae deserunt odit
+            doloribus sequi tempore veniam perspiciatis. Quae quaerat non dolorem molestias quasi magni, odit nemo iusto
+            illum atque sit rerum animi vel similique architecto accusamus, ea excepturi? Dolores nam voluptatem quo
+            expedita aspernatur hic ducimus, assumenda exercitationem quibusdam in magnam voluptate blanditiis! Nostrum,
+            corporis sunt? Repellat, laboriosam iure nam fugiat similique repellendus eaque, itaque ipsa debitis
+            doloribus aperiam. Possimus iusto ullam accusantium, qui maiores quisquam sed incidunt ratione recusandae
+            laboriosam esse ipsa eaque corporis, fugit, aliquid at architecto sapiente laudantium vero? Eos nemo beatae
+            dolore accusamus rerum mollitia laudantium culpa hic velit iusto autem corporis aperiam, fugiat, molestiae
+            deserunt. Ex perferendis autem dolore, totam saepe, odio quo dolores deleniti laboriosam impedit ipsum
+            doloribus dignissimos ipsam ipsa. Aperiam minus nulla nihil sequi provident sunt nam.</div>
+        <div class="box">hey i am a box Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta dolor veritatis
+            eveniet ullam ipsam sit iste voluptate suscipit. Obcaecati voluptate vel illum! Adipisci corrupti natus nisi
+            repellendus commodi earum voluptate ex doloremque rerum quibusdam.
+
+        </div>
+        <div class="box">hey i am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo sint
+            facere minus excepturi cum eligendi laboriosam quae doloremque eius cumque earum nobis in culpa eum
+            assumenda unde quas modi consequuntur velit, repudiandae incidunt maxime tempora voluptas! Culpa deserunt
+            vitae dignissimos praesentium ipsam! Debitis, quisquam!</div>
+    </div>
+</body>
+
+</html>
