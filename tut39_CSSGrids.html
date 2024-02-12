@@ -11,8 +11,23 @@
             grid-template-columns: 120px 100px; /*two columns of 120px and 100px*/
             grid-template-rows: 100px 100px 100px;
 
+            /* fr unit=1 fraction of total */
+            width: 80vw;
+            grid-template-columns: 1fr 2fr 1fr;
+            /* or */
+            grid-template-columns: repeat(5,1fr);
+            grid-template-columns: repeat(5,minmax(100px,1fr));
+
+            /* gap */
+            row-gap: 10px;
+            column-gap: 20px;
+
             /* rename columns */
-            grid-template-columns: [pehla] 120px [dusra] 100px [t];
+            /* grid-template-columns: [pehla] 120px [dusra] 100px [t]; */
+
+            /* justify or align items */
+            /* justify-items: center;
+            align-items: center; */
         }
         .box{
             border: 2px solid red;

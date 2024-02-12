@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid2</title>
+    <title>Grid- specify area of grid and place items within</title>
+    <style>
+        .container{
+            border: 3px solid yellow;
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                                  "side article article"
+                                  "footer footer footer";
+        }
+        .box{
+            border: 2px solid red;
+            height: 55px;
+        }
+        .item1{
+            grid-area: nav;
+            background-color: rgb(28, 77, 61);
+        }
+        .item2{
+            grid-area: side;
+            background-color: rgb(127, 121, 238);
+        }
+        .item3{
+            grid-area: article;
+            background-color: rgb(81, 154, 217);
+        }
+        .item4{
+            grid-area: footer;
+            background-color: rgb(56, 54, 54);
+        }
+        .item5{
+            grid-area: nav;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box item1">1</div>
+        <div class="box item2">2</div>
+        <div class="box item3">3</div>
+        <div class="box item4">4</div>
+        <div class="box item5">5</div>
+    </div>
 </body>
 </html>
