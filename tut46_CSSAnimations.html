@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            background-color: rgb(18, 58, 82);
+            height: 80vh;
+            width: 80vw;
+        }
+        .box{
+            background-color: aqua;
+            height: 100px;
+            width: 100px;
+            /* animation: omkarsAnimation; */
+            /* animation-duration: 2s; */
+            /* animation-iteration-count: 1;  */
+            /* animation-iteration-count: infinite; */
+            /* animation-timing-function:ease-in-out; */
+            /* animation-delay: 0s; */
+            /* animation-direction: alternate; */
+            /* animation-play-state: paused; */
+            animation: omkarsAnimation 2s ease-in-out 1s infinite alternate,
+                       omkar2 2s ease-in-out 1s infinite alternate;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode;             */
+
+            /* animation-fill-mode: forwards; */
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes omkarsAnimation {
+            from{
+                background-color: red;
+            }
+            to{
+                transform: translateX(75vw);
+            }
+        }
+
+        @keyframes omkar2 {
+            20%{
+                transform: rotate(20deg);
+            }
+            50%{
+                transform: rotate(50deg);
+            }
+            80%{
+                transform: rotate(80deg);
+            }
+            100%{
+                transform: rotate(100deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
