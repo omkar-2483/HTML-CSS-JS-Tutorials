@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit and Object Cover</title>
+    <style>
+        .container{
+            height: 234px;
+            width: 288px;
+            background-color: aliceblue;
+            border: 2px solid rgb(229, 27, 27);
+        }
+        img{
+            height: 234px;
+            width: 288px;
+            /* object-fit: cover; */
+            /* object-fit: contain; */
+
+            /* object-fit: cover;
+            object-position:right;
+            object-position: left;
+            object-position: center; */
+
+            object-fit: fill;   /*default*/
+            object-fit: scale-down;
+            object-position: 10px 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://images.wondershare.com/filmora/article-images/panoramic-beach.jpg" alt="">
+    </div>
+</body>
+</html>
