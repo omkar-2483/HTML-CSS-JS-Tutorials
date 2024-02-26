@@ -27,7 +27,7 @@ console.log(c.length);
 
 //string slicing
 console.log(c.slice(1,4)) //index 1 to 3
-console.log(c.slice(1))
+console.log(c.slice(1)) //index 1 to all next
 c='shubhamsh'
 console.log(c.replace('sh',23)) //only once
 
