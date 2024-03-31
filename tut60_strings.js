@@ -35,9 +35,10 @@ console.log(c.replace('sh',23)) //only once
 console.log(c.concat(a,b))
 
 //remove white spaces
-str='   omkar   '
+str='   omkar   kasture   '
 console.log(str);
 console.log(str.trim());
+console.log(str);
 
 //strings are immutable
 str='kasture';
