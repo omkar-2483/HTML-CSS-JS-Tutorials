@@ -9,11 +9,11 @@ console.log(arr[6]);
 arr[5]=10;
 console.log(arr);
 
-console.log(typeof(arr));
+console.log(typeof arr);
 
 //array methods
-console.log(arr.toString());
-console.log(arr.join(" and "));
+console.log("array to string",arr.toString());
+console.log('join',arr.join(" and "));
 console.log(arr.pop());  //pop and return last element;
 console.log(arr);
 console.log(arr.push(7)); //push item and return length of array
@@ -38,9 +38,9 @@ console.log(a2)
 console.log([2,9,3].sort());
 
 numbers=[2,1,5,6,7,3]
-numbers.splice(1,3);
-console.log(numbers); // removes elements between index 1,3 also add new elements
-numbers.splice(1,2,222,343);
+numbers.splice(2,3);
+console.log(numbers); // removes 3 elements from index 2
+numbers.splice(1,1,222,343); //from index 1 delete 1 element and add new elements from index 1
 console.log(numbers)
 
 numbers=[1,2,3,4,5,6,7];
