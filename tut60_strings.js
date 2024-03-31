@@ -30,6 +30,7 @@ console.log(c.slice(1,4)) //index 1 to 3
 console.log(c.slice(1)) //index 1 to all next
 c='shubhamsh'
 console.log(c.replace('sh',23)) //only once
+console.log(c.replaceAll('sh',23)) //replace all
 
 //concate
 console.log(c.concat(a,b))
@@ -42,4 +43,7 @@ console.log(str);
 
 //strings are immutable
 str='kasture';
+str[0]='j'; //cannot change origial string
+console.log(str);
+str = str.replace('k','j'); //reassign new alue to str 
 console.log(str);
