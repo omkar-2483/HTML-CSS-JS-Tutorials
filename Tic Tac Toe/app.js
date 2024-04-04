@@ -30,10 +30,12 @@ boxes.forEach((box) => {
     if (turnO) {
       //turn of playerO
       box.innerText = "O";
+      box.style.color='red'
       turnO = false;
     } else {
       //turn of playerX
       box.innerText = "X";
+      box.style.color='green'
       turnO = true;
     }
     box.disabled = true;
