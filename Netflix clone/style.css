@@ -5,9 +5,11 @@
     padding: 0;
     /* font-family: "Poppins", sans-serif; */
 }
-body{
+
+body {
     background-color: black;
 }
+
 .main {
     background-image: url(assets/images/bg.jpg);
     background-size: cover;
@@ -54,7 +56,7 @@ nav button {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 23px ;
+    padding: 23px;
     text-align: center;
     flex-direction: column;
     color: white;
@@ -76,36 +78,47 @@ nav button {
     font-size: 20px;
 }
 
-.separation{
+.separation {
     height: 7px;
     background-color: rgb(50, 50, 50);
 }
 
-.btn{
-    padding: 3px 8px;
-    font-weight: bold;
-    background-color: white;
-}
-.main input {
-    font-size: 14px;
-    padding: 9px 35px;
+.btn {
+    padding: 5px 15px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
-    background-color: rgba(23,23,23,0.7);
+    border: 1px solid rgba(255, 255, 255, 0.584);
+    cursor: pointer;
+}
+
+.main input {
+    font-size: 16px;
+    padding:15px 150px 15px 15px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.btn-red{
+
+.btn-red {
     background-color: red;
     color: white;
     font-size: 20px;
-    border-radius: 4px;
+    padding: 12px;
+    font-weight: bold;
+    border: none;
 }
-.hero-btns{
+
+.btn-red-sn {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.hero-btns {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
-}
-.btn-red-sn{
-    background-color: red;
-    color: white;
 }
